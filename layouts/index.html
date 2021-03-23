@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	{{ partial "header.html" . }}
+	<body>
+		<div class="content">
+			{{ partial "head.html" . }}
+			
+			<main class="list">
+				<div class="site-description" style="margin-bottom: 2rem;">
+					{{- if isset .Site.Params "subtitle" -}}
+					<p style="margin: 0;">{{ .Site.Params.Subtitle | markdownify }}</p>
+					{{- end -}}
+				</div>
+				<div class="introduce" style="margin-bottom: 2rem;">
+					<p class="intro">{{ .Site.Params.SayHello }}</p>
+					<p class="intro">{{ .Site.Params.Intro }}</p>
+				</div>
+				<p style="font-size: 17px; margin: 0;">recent blog posts <a href="/posts">(see all)</a></p>
+				{{ range ( where .Site.RegularPages "Type" "posts" | first 3 ) }}
+				<section class="list-item">
+					<h1 class="title"><a href="{{ .RelPermalink }}">{{.Title}}</a></h1>
+					<div class="date-tags">
+						<time>{{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</time>
+					</div>
+					<!-- <br><div class="description">
+						{{ if isset .Params "description" }}
+						{{ .Description }}
+						{{ else }}
+						{{ .Summary }}&hellip;
+						{{ end }}
+					</div>
+					<a href="{{ .RelPermalink }}">Read more ⟶</a> -->
+				</section>
+				{{ end }}
+				<div>
+					<h2>Projects</h2>
+				</div>
+				<div>
+					<h2>Skills</h2>
+			        <p>I thought myself can build something with</p>
+					<ul>
+						{{- range $val := .Site.Params.MySkills -}}
+							<li>{{ $val }}</li>
+						{{- end -}}
+					</ul>
+			        <p>Also my machine use Linux, with <a href="https://archlabslinux.com/">Archlabs</a> distro.</p>
+				</div>
+			</main>
+			{{ partial "footer.html" . }}
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on The HoR</title>
+    <link>https://husnaram.github.io/posts/</link>
+    <description>Recent content in Posts on The HoR</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Husna</copyright>
+    <lastBuildDate>Fri, 22 Jan 2021 08:54:36 +0700</lastBuildDate><atom:link href="https://husnaram.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Without Omitempty in Go Tags Nvim</title>
+      <link>https://husnaram.github.io/posts/without-omitempty-in-go-tags-nvim/</link>
+      <pubDate>Fri, 22 Jan 2021 08:54:36 +0700</pubDate>
+      
+      <guid>https://husnaram.github.io/posts/without-omitempty-in-go-tags-nvim/</guid>
+      <description>Using go.tags of coc-go features will add minimalistic tag on side each fields of struct, and accompanied by omitempty.
+At this omitempty moment my editor make me struggeling to remove it.
+ omitempty aims to hide tags when field has no one value, in other words nil
+ Here the escape.
+Open up your coc-settings.json of vim/neovim config, then add this lines.
+&amp;#34;go.tags&amp;#34;: { &amp;#34;options&amp;#34;: &amp;#34;json=&amp;#34; } Call command :wq</description>
+    </item>
+    
+    <item>
+      <title>Reload Neovim Config Without Restarting Editor</title>
+      <link>https://husnaram.github.io/posts/reload-neovim-config-without-restarting-editor/</link>
+      <pubDate>Fri, 22 Jan 2021 08:42:03 +0700</pubDate>
+      
+      <guid>https://husnaram.github.io/posts/reload-neovim-config-without-restarting-editor/</guid>
+      <description>Just watched neovim video on youtube at ThePrimeagen channel. And he can install plugin without close/restarting the nvim editor, then i realized what command he typed.
+Ok, i got it.
+:so % That&amp;rsquo;s it! And i find explained of the command from superuser.com.
+ :so for short command of :source which reads the content of the specified file and treats it as nvim/vim code. And % stads for current file name.</description>
+    </item>
+    
+  </channel>
+</rss>
