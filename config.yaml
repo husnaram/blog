@@ -15,7 +15,7 @@ params:
     useCDN: false
     subtitle: 'a seasoned enthusiast of developer'
     sayHello: "Hello folks"
-    intro: "Hi! I'm Husna by the way. An enthusiasts in the computer, programming, web, of course. But not a professional, and still want be the expert, tha't why i'm learning, always!"
+    intro: "Hi! I'm Husna by the way. An enthusiasts in web programming. But not a professional, and still want be the expert, that's why i'm learning, always!"
     mySkills:
     - HTML/CSS
     - Tailwindcss
@@ -27,7 +27,7 @@ params:
     social:
         - name: GitHub
           icon: github
-          url: 'https://github.com/husnaramadan'
+          url: 'https://github.com/husnaram'
         - name: Twitter
           icon: twitter
           url: 'https://twitter.com/husna_ram/'

@@ -16,7 +16,7 @@
 					<p class="intro">{{ .Site.Params.Intro }}</p>
 				</div>
 				<p style="font-size: 17px; margin: 0;">recent blog posts <a href="/posts">(see all)</a></p>
-				{{ range ( where .Site.RegularPages "Type" "posts" | first 3 ) }}
+				{{ range ( where .Site.RegularPages "Type" "posts" | first 4 ) }}
 				<section class="list-item">
 					<h1 class="title"><a href="{{ .RelPermalink }}">{{.Title}}</a></h1>
 					<div class="date-tags">

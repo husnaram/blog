@@ -16,7 +16,7 @@ fi
 git commit -m "$msg"
 
 # Push to the Github
-git push origin master
+git push origin main
 
 # Back to the previous dir
 cd ..
