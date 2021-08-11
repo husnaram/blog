@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Husnaram</title>
+    <link>https://husnaram.github.io/tags/</link>
+    <description>Recent content in Tags on Husnaram</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Husnaram</copyright>
+    <lastBuildDate>Wed, 19 May 2021 11:22:50 +0700</lastBuildDate><atom:link href="https://husnaram.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>linux</title>
+      <link>https://husnaram.github.io/tags/linux/</link>
+      <pubDate>Wed, 19 May 2021 11:22:50 +0700</pubDate>
+      
+      <guid>https://husnaram.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>php</title>
+      <link>https://husnaram.github.io/tags/php/</link>
+      <pubDate>Sun, 28 Mar 2021 21:32:02 +0700</pubDate>
+      
+      <guid>https://husnaram.github.io/tags/php/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>neovim</title>
+      <link>https://husnaram.github.io/tags/neovim/</link>
+      <pubDate>Fri, 22 Jan 2021 08:54:36 +0700</pubDate>
+      
+      <guid>https://husnaram.github.io/tags/neovim/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

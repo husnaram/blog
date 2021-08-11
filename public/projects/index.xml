@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Husnaram&#39;s projects on Husnaram</title>
+    <link>https://husnaram.github.io/projects/</link>
+    <description>Recent content in Husnaram&#39;s projects on Husnaram</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Husnaram</copyright><atom:link href="https://husnaram.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Awesomeco</title>
+      <link>https://husnaram.github.io/projects/awesomeco/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://husnaram.github.io/projects/awesomeco/</guid>
+      <description>Advertisement 😊
+ pica - high quality and fast image resize in browser. babelfish - developer friendly i18n with plurals support and easy syntax.  You will like those projects!
+ h1 Heading 8-) h2 Heading h3 Heading h4 Heading h5 Heading h6 Heading Horizontal Rules    Typographic replacements Enable typographer option to see result.
+(c) (C) (r) (R) (tm) (TM) (p) (P) +-
+test.. test&amp;hellip; test&amp;hellip;.. test?</description>
+    </item>
+    
+    <item>
+      <title>Kind</title>
+      <link>https://husnaram.github.io/projects/kind/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://husnaram.github.io/projects/kind/</guid>
+      <description>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam dignissimos veritatis odio quae a ducimus deleniti nostrum nemo corporis. Quod asperiores hic aliquid placeat repudiandae dignissimos odio! Ex, ipsum non.</description>
+    </item>
+    
+    <item>
+      <title>Table</title>
+      <link>https://husnaram.github.io/projects/table/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://husnaram.github.io/projects/table/</guid>
+      <description>Markdown: Syntax  Overview  Philosophy Inline HTML Automatic Escaping for Special Characters   Block Elements  Paragraphs and Line Breaks Headers Blockquotes Lists Code Blocks Horizontal Rules   Span Elements  Links Emphasis Code Images   Miscellaneous  Backslash Escapes Automatic Links    Note: This document is itself written using Markdown; you can see the source for it by adding &amp;lsquo;.text&amp;rsquo; to the URL.</description>
+    </item>
+    
+    <item>
+      <title>Tost</title>
+      <link>https://husnaram.github.io/projects/tost/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://husnaram.github.io/projects/tost/</guid>
+      <description>Markdown: Basics Getting the Gist of Markdown&amp;rsquo;s Formatting Syntax This page offers a brief overview of what it&amp;rsquo;s like to use Markdown. The [syntax page] s provides complete, detailed documentation for every feature, but Markdown should be very easy to pick up simply by looking at a few examples of it in action. The examples on this page are written in a before/after style, showing example syntax and the HTML output produced by Markdown.</description>
+    </item>
+    
+  </channel>
+</rss>

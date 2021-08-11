@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on Husnaram</title>
+    <link>https://husnaram.github.io/tags/linux/</link>
+    <description>Recent content in linux on Husnaram</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Husnaram</copyright>
+    <lastBuildDate>Wed, 19 May 2021 11:22:50 +0700</lastBuildDate><atom:link href="https://husnaram.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Access USB Drive That Linux Booted From</title>
+      <link>https://husnaram.github.io/posts/how-to-access-usb-drive-that-linux-booted-from/</link>
+      <pubDate>Wed, 19 May 2021 11:22:50 +0700</pubDate>
+      
+      <guid>https://husnaram.github.io/posts/how-to-access-usb-drive-that-linux-booted-from/</guid>
+      <description>Been a long time ago i&amp;rsquo;m trying linux liveUSB, and the present i try it again.
+Intent of this act is grabing data from laptop without operating system. In my case i&amp;rsquo;m using bunsenLabs, the debian based linux distro.
+I want to the data stored on USB drive that linux booted from. Here is the solution.
+Check where USB drive mounted
+lsblk
+But, usually liveUSB drive mounted on /lib/live/mount/medium
+Remount USB device</description>
+    </item>
+    
+  </channel>
+</rss>

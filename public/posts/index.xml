@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Husnaram</title>
+    <link>https://husnaram.github.io/posts/</link>
+    <description>Recent content in Posts on Husnaram</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Husnaram</copyright>
+    <lastBuildDate>Sat, 07 Aug 2021 19:42:19 +0700</lastBuildDate><atom:link href="https://husnaram.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Make Access Point on Archlinux</title>
+      <link>https://husnaram.github.io/posts/make-access-point-on-archlinux/</link>
+      <pubDate>Sat, 07 Aug 2021 19:42:19 +0700</pubDate>
+      
+      <guid>https://husnaram.github.io/posts/make-access-point-on-archlinux/</guid>
+      <description>Awalnya browsing untuk mencari tahu cara menampilkan preview development web yang ada di laptop ke smartphone tanpa internet atau simpelnya tanpa di deploy.
+Tapi, logicnya si laptop ini mesti terkonesi dengan smartphone, lalu solusi muncul yaitu dengna AP (access point) atau hotspot yand dipancarkan laptop, kemudian diakses via smartphone.
+Hasil browsingnya ada di sini Tutorial Share Koneksi Wifi (Hotspot) di Arch Linux.
+Saat menerapkan tutorial tersebut ada kendala saat membuat access pointnya.</description>
+    </item>
+    
+    <item>
+      <title>How to Access USB Drive That Linux Booted From</title>
+      <link>https://husnaram.github.io/posts/how-to-access-usb-drive-that-linux-booted-from/</link>
+      <pubDate>Wed, 19 May 2021 11:22:50 +0700</pubDate>
+      
+      <guid>https://husnaram.github.io/posts/how-to-access-usb-drive-that-linux-booted-from/</guid>
+      <description>Been a long time ago i&amp;rsquo;m trying linux liveUSB, and the present i try it again.
+Intent of this act is grabing data from laptop without operating system. In my case i&amp;rsquo;m using bunsenLabs, the debian based linux distro.
+I want to the data stored on USB drive that linux booted from. Here is the solution.
+Check where USB drive mounted
+lsblk
+But, usually liveUSB drive mounted on /lib/live/mount/medium
+Remount USB device</description>
+    </item>
+    
+    <item>
+      <title>Make Word Transform to Uppercase in First Char Each</title>
+      <link>https://husnaram.github.io/posts/make-word-transform-to-uppercase-in-first-char-each/</link>
+      <pubDate>Sun, 28 Mar 2021 21:32:02 +0700</pubDate>
+      
+      <guid>https://husnaram.github.io/posts/make-word-transform-to-uppercase-in-first-char-each/</guid>
+      <description>To make first char of fullname or just name transform into uppercase without painless is simple.
+Built-in string function of PHP had answerability. Yeah, sure ucwords() + strtolower(). You combine they like this ucwords(strtolower(&amp;quot;HUBERT blAINe&amp;quot;)), and got it Hubert Blaine.</description>
+    </item>
+    
+    <item>
+      <title>Without Omitempty in Go Tags Nvim</title>
+      <link>https://husnaram.github.io/posts/without-omitempty-in-go-tags-nvim/</link>
+      <pubDate>Fri, 22 Jan 2021 08:54:36 +0700</pubDate>
+      
+      <guid>https://husnaram.github.io/posts/without-omitempty-in-go-tags-nvim/</guid>
+      <description>Using go.tags of coc-go features will add minimalistic tag on side each fields of struct, and accompanied by omitempty.
+At this omitempty moment my editor make me struggeling to remove it.
+ omitempty aims to hide tags when field has no one value, in other words nil
+ Here the escape.
+Open up your coc-settings.json of vim/neovim config, then add this lines.
+&amp;#34;go.tags&amp;#34;: { &amp;#34;options&amp;#34;: &amp;#34;json=&amp;#34; } Call command :wq</description>
+    </item>
+    
+    <item>
+      <title>Reload Neovim Config Without Restarting Editor</title>
+      <link>https://husnaram.github.io/posts/reload-neovim-config-without-restarting-editor/</link>
+      <pubDate>Fri, 22 Jan 2021 08:42:03 +0700</pubDate>
+      
+      <guid>https://husnaram.github.io/posts/reload-neovim-config-without-restarting-editor/</guid>
+      <description>Just watched neovim video on youtube at ThePrimeagen channel. And he can install plugin without close/restarting the nvim editor, then i realized what command he typed.
+Ok, i got it.
+:so % That&amp;rsquo;s it! And i find explained of the command from superuser.com.
+ :so for short command of :source which reads the content of the specified file and treats it as nvim/vim code. And % stads for current file name.</description>
+    </item>
+    
+  </channel>
+</rss>

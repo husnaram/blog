@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en"><meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta property="og:image" content="" />
+
+<meta property="og:title" content="Table" />
+<meta property="og:description" content="Markdown: Syntax  Overview  Philosophy Inline HTML Automatic Escaping for Special Characters   Block Elements  Paragraphs and Line Breaks Headers Blockquotes Lists Code Blocks Horizontal Rules   Span Elements  Links Emphasis Code Images   Miscellaneous  Backslash Escapes Automatic Links    Note: This document is itself written using Markdown; you can see the source for it by adding &lsquo;.text&rsquo; to the URL." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://husnaram.github.io/projects/table/" /><meta property="article:section" content="projects" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Table"/>
+<meta name="twitter:description" content="Markdown: Syntax  Overview  Philosophy Inline HTML Automatic Escaping for Special Characters   Block Elements  Paragraphs and Line Breaks Headers Blockquotes Lists Code Blocks Horizontal Rules   Span Elements  Links Emphasis Code Images   Miscellaneous  Backslash Escapes Automatic Links    Note: This document is itself written using Markdown; you can see the source for it by adding &lsquo;.text&rsquo; to the URL."/>
+<title>Table - Husnaram</title><meta name="description" content="" />
+
+
+<link rel="stylesheet" href="https://husnaram.github.io/css/styles.min.0fa60949c39263f896cd16000ab6d47de93a7acb0f56e641b083ae5dc29db718.css" integrity="sha256-D6YJScOSY/iWzRYACrbUfek6essPVuZBsIOuXcKdtxg=" />
+
+
+<script defer language="javascript" type="text/javascript" src="https://husnaram.github.io/js/main.js"></script><body>
+
+    <div class="text-gray-800 md:w-8/12 md:mx-auto">
+        <div class="md:grid md:grid-cols-12">
+<div class="hidden md:flow-root md:col-span-1">
+    <div class="bg-gray-700 py-2 flex items-center justify-center shadow-md md:h-16">
+        <h1 class="text-2xl text-white font-bold font-mono border-b-3 border-yellow-500 hover:bg-red-400">
+            <a href="https://husnaram.github.io/">HoR</a>
+        </h1>
+    </div>
+</div>
+
+<div class="md:col-span-11">
+    <header class="py-2 bg-yellow-100 space-y-3 md:py-5">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+
+                
+                <div class="p-2 bg-gray-700 md:hidden">
+                    <a class="text-white font-bold font-mono hover:bg-red-400" href="https://husnaram.github.io/">
+                        <h1 class="text-lg border-b-2 border-yellow-500">
+                            HoR
+                        </h1>
+                    </a>
+                </div>
+
+                
+                <h3 class="text-sm font-bold tracking-wider md:pl-2">
+                    a seasoned enthusiast of web developer
+                </h3>
+
+            </div>
+            <div class="hidden md:flow-root md:font-mono md:text-sm">
+                <ul class="pr-3 flex items-center space-x-3">
+                    
+                    <li>
+                        <a href="https://husnaram.github.io/" class="pb-1 border-b-3 border-yellow-400 hover:bg-red-400">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://husnaram.github.io/posts" class="pb-1 border-b-3 border-yellow-400 hover:bg-red-400">All posts</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://husnaram.github.io/projects" class="pb-1 border-b-3 border-yellow-400 hover:bg-red-400">Projects</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://husnaram.github.io/tags" class="pb-1 border-b-3 border-yellow-400 hover:bg-red-400">Tags</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="text-right pr-3 md:hidden">
+                <button onClick="dropdownToggle()" id="dropdown-toggle" class="outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-9 -2 24 24" width="22" height="22"
+                        preserveAspectRatio="xMinYMin" class="fill-current">
+                        <path
+                            d="M3 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 2a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 14a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0-2a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0-5a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0-2a1 1 0 1 0 0-2 1 1 0 0 0 0 2z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        
+        <div class="hidden" id="dropdown-mobile">
+            <ul class="flex flex-col text-sm items-center space-y-1">
+                
+                <li class="border-b-2 border-yellow-500 hover:bg-red-400">
+                    <a href="https://husnaram.github.io/">Home</a>
+                </li>
+                
+                <li class="border-b-2 border-yellow-500 hover:bg-red-400">
+                    <a href="https://husnaram.github.io/posts">All posts</a>
+                </li>
+                
+                <li class="border-b-2 border-yellow-500 hover:bg-red-400">
+                    <a href="https://husnaram.github.io/projects">Projects</a>
+                </li>
+                
+                <li class="border-b-2 border-yellow-500 hover:bg-red-400">
+                    <a href="https://husnaram.github.io/tags">Tags</a>
+                </li>
+                
+            </ul>
+        </div>
+    </header><section
+                class="pt-5 pb-3 px-2 border-t-8 border-l-8 border-r-8 border-yellow-100 text-sm space-y-6 md:px-3 md:text-base">
+
+<div>
+    <div class="mb-2">
+        <div class="flex mb-4 font-mono text-xs text-gray-400 space-x-1">
+            <span>/</span>
+            <a
+                href="https://husnaram.github.io/projects"
+                class="border-b-3 border-yellow-500 pb-0.5 hover:bg-red-400"
+                >projects</a
+            >
+        </div>
+        <h2 class="mb-2 text-3xl text-mono font-bold tracking-wide post-title">
+            Table
+        </h2>
+    </div>
+
+    <article class="prose max-w-none pt-2 pb-2"><h1 id="markdown-syntax">Markdown: Syntax</h1>
+<ul>
+<li><a href="#overview">Overview</a>
+<ul>
+<li><a href="#philosophy">Philosophy</a></li>
+<li><a href="#html">Inline HTML</a></li>
+<li><a href="#autoescape">Automatic Escaping for Special Characters</a></li>
+</ul>
+</li>
+<li><a href="#block">Block Elements</a>
+<ul>
+<li><a href="#p">Paragraphs and Line Breaks</a></li>
+<li><a href="#header">Headers</a></li>
+<li><a href="#blockquote">Blockquotes</a></li>
+<li><a href="#list">Lists</a></li>
+<li><a href="#precode">Code Blocks</a></li>
+<li><a href="#hr">Horizontal Rules</a></li>
+</ul>
+</li>
+<li><a href="#span">Span Elements</a>
+<ul>
+<li><a href="#link">Links</a></li>
+<li><a href="#em">Emphasis</a></li>
+<li><a href="#code">Code</a></li>
+<li><a href="#img">Images</a></li>
+</ul>
+</li>
+<li><a href="#misc">Miscellaneous</a>
+<ul>
+<li><a href="#backslash">Backslash Escapes</a></li>
+<li><a href="#autolink">Automatic Links</a></li>
+</ul>
+</li>
+</ul>
+<p><strong>Note:</strong> This document is itself written using Markdown; you
+can <a href="https://husnaram.github.io/projects/markdown/syntax.text">see the source for it by adding &lsquo;.text&rsquo; to the URL</a>.</p>
+<hr>
+<h2 id="overview">Overview</h2>
+<h3 id="philosophy">Philosophy</h3>
+<p>Markdown is intended to be as easy-to-read and easy-to-write as is feasible.</p>
+<p>Readability, however, is emphasized above all else. A Markdown-formatted
+document should be publishable as-is, as plain text, without looking
+like it&rsquo;s been marked up with tags or formatting instructions. While
+Markdown&rsquo;s syntax has been influenced by several existing text-to-HTML
+filters &ndash; including <a href="http://docutils.sourceforge.net/mirror/setext.html">Setext</a>, <a href="http://www.aaronsw.com/2002/atx/">atx</a>, <a href="http://textism.com/tools/textile/">Textile</a>, <a href="http://docutils.sourceforge.net/rst.html">reStructuredText</a>,
+<a href="http://www.triptico.com/software/grutatxt.html">Grutatext</a>, and <a href="http://ettext.taint.org/doc/">EtText</a> &ndash; the single biggest source of
+inspiration for Markdown&rsquo;s syntax is the format of plain text email.</p>
+<h2 id="block-elements">Block Elements</h2>
+<h3 id="paragraphs-and-line-breaks">Paragraphs and Line Breaks</h3>
+<p>A paragraph is simply one or more consecutive lines of text, separated
+by one or more blank lines. (A blank line is any line that looks like a
+blank line &ndash; a line containing nothing but spaces or tabs is considered
+blank.) Normal paragraphs should not be indented with spaces or tabs.</p>
+<p>The implication of the &ldquo;one or more consecutive lines of text&rdquo; rule is
+that Markdown supports &ldquo;hard-wrapped&rdquo; text paragraphs. This differs
+significantly from most other text-to-HTML formatters (including Movable
+Type&rsquo;s &ldquo;Convert Line Breaks&rdquo; option) which translate every line break
+character in a paragraph into a <code>&lt;br /&gt;</code> tag.</p>
+<p>When you <em>do</em> want to insert a <code>&lt;br /&gt;</code> break tag using Markdown, you
+end a line with two or more spaces, then type return.</p>
+<h3 id="headers">Headers</h3>
+<p>Markdown supports two styles of headers, [Setext] [1] and [atx] [2].</p>
+<p>Optionally, you may &ldquo;close&rdquo; atx-style headers. This is purely
+cosmetic &ndash; you can use this if you think it looks better. The
+closing hashes don&rsquo;t even need to match the number of hashes
+used to open the header. (The number of opening hashes
+determines the header level.)</p>
+<h3 id="blockquotes">Blockquotes</h3>
+<p>Markdown uses email-style <code>&gt;</code> characters for blockquoting. If you&rsquo;re
+familiar with quoting passages of text in an email message, then you
+know how to create a blockquote in Markdown. It looks best if you hard
+wrap the text and put a <code>&gt;</code> before every line:</p>
+<blockquote>
+<p>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p>
+<p>Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+id sem consectetuer libero luctus adipiscing.</p>
+</blockquote>
+<p>Markdown allows you to be lazy and only put the <code>&gt;</code> before the first
+line of a hard-wrapped paragraph:</p>
+<blockquote>
+<p>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p>
+</blockquote>
+<blockquote>
+<p>Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+id sem consectetuer libero luctus adipiscing.</p>
+</blockquote>
+<p>Blockquotes can be nested (i.e. a blockquote-in-a-blockquote) by
+adding additional levels of <code>&gt;</code>:</p>
+<blockquote>
+<p>This is the first level of quoting.</p>
+<blockquote>
+<p>This is nested blockquote.</p>
+</blockquote>
+<p>Back to the first level.</p>
+</blockquote>
+<p>Blockquotes can contain other Markdown elements, including headers, lists,
+and code blocks:</p>
+<blockquote>
+<h2 id="this-is-a-header">This is a header.</h2>
+<ol>
+<li>This is the first list item.</li>
+<li>This is the second list item.</li>
+</ol>
+<p>Here&rsquo;s some example code:</p>
+<pre><code>return shell_exec(&quot;echo $input | $markdown_script&quot;);
+</code></pre>
+</blockquote>
+<p>Any decent text editor should make email-style quoting easy. For
+example, with BBEdit, you can make a selection and choose Increase
+Quote Level from the Text menu.</p>
+<h3 id="lists">Lists</h3>
+<p>Markdown supports ordered (numbered) and unordered (bulleted) lists.</p>
+<p>Unordered lists use asterisks, pluses, and hyphens &ndash; interchangably
+&ndash; as list markers:</p>
+<ul>
+<li>Red</li>
+<li>Green</li>
+<li>Blue</li>
+</ul>
+<p>is equivalent to:</p>
+<ul>
+<li>Red</li>
+<li>Green</li>
+<li>Blue</li>
+</ul>
+<p>and:</p>
+<ul>
+<li>Red</li>
+<li>Green</li>
+<li>Blue</li>
+</ul>
+<p>Ordered lists use numbers followed by periods:</p>
+<ol>
+<li>Bird</li>
+<li>McHale</li>
+<li>Parish</li>
+</ol>
+<p>It&rsquo;s important to note that the actual numbers you use to mark the
+list have no effect on the HTML output Markdown produces. The HTML
+Markdown produces from the above list is:</p>
+<p>If you instead wrote the list in Markdown like this:</p>
+<ol>
+<li>Bird</li>
+<li>McHale</li>
+<li>Parish</li>
+</ol>
+<p>or even:</p>
+<ol start="3">
+<li>Bird</li>
+<li>McHale</li>
+<li>Parish</li>
+</ol>
+<p>you&rsquo;d get the exact same HTML output. The point is, if you want to,
+you can use ordinal numbers in your ordered Markdown lists, so that
+the numbers in your source match the numbers in your published HTML.
+But if you want to be lazy, you don&rsquo;t have to.</p>
+<p>To make lists look nice, you can wrap items with hanging indents:</p>
+<ul>
+<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+viverra nec, fringilla in, laoreet vitae, risus.</li>
+<li>Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+Suspendisse id sem consectetuer libero luctus adipiscing.</li>
+</ul>
+<p>But if you want to be lazy, you don&rsquo;t have to:</p>
+<ul>
+<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+viverra nec, fringilla in, laoreet vitae, risus.</li>
+<li>Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+Suspendisse id sem consectetuer libero luctus adipiscing.</li>
+</ul>
+<p>List items may consist of multiple paragraphs. Each subsequent
+paragraph in a list item must be indented by either 4 spaces
+or one tab:</p>
+<ol>
+<li>
+<p>This is a list item with two paragraphs. Lorem ipsum dolor
+sit amet, consectetuer adipiscing elit. Aliquam hendrerit
+mi posuere lectus.</p>
+<p>Vestibulum enim wisi, viverra nec, fringilla in, laoreet
+vitae, risus. Donec sit amet nisl. Aliquam semper ipsum
+sit amet velit.</p>
+</li>
+<li>
+<p>Suspendisse id sem consectetuer libero luctus adipiscing.</p>
+</li>
+</ol>
+<p>It looks nice if you indent every line of the subsequent
+paragraphs, but here again, Markdown will allow you to be
+lazy:</p>
+<ul>
+<li>
+<p>This is a list item with two paragraphs.</p>
+<pre><code>This is the second paragraph in the list item. You're
+</code></pre>
+<p>only required to indent the first line. Lorem ipsum dolor
+sit amet, consectetuer adipiscing elit.</p>
+</li>
+<li>
+<p>Another item in the same list.</p>
+</li>
+</ul>
+<p>To put a blockquote within a list item, the blockquote&rsquo;s <code>&gt;</code>
+delimiters need to be indented:</p>
+<ul>
+<li>
+<p>A list item with a blockquote:</p>
+<blockquote>
+<p>This is a blockquote
+inside a list item.</p>
+</blockquote>
+</li>
+</ul>
+<p>To put a code block within a list item, the code block needs
+to be indented <em>twice</em> &ndash; 8 spaces or two tabs:</p>
+<ul>
+<li>
+<p>A list item with a code block:</p>
+<pre><code>&lt;code goes here&gt;
+</code></pre>
+</li>
+</ul>
+<h3 id="code-blocks">Code Blocks</h3>
+<p>Pre-formatted code blocks are used for writing about programming or
+markup source code. Rather than forming normal paragraphs, the lines
+of a code block are interpreted literally. Markdown wraps a code block
+in both <code>&lt;pre&gt;</code> and <code>&lt;code&gt;</code> tags.</p>
+<p>To produce a code block in Markdown, simply indent every line of the
+block by at least 4 spaces or 1 tab.</p>
+<p>This is a normal paragraph:</p>
+<pre><code>This is a code block.
+</code></pre>
+<p>Here is an example of AppleScript:</p>
+<pre><code>tell application &quot;Foo&quot;
+    beep
+end tell
+</code></pre>
+<p>A code block continues until it reaches a line that is not indented
+(or the end of the article).</p>
+<p>Within a code block, ampersands (<code>&amp;</code>) and angle brackets (<code>&lt;</code> and <code>&gt;</code>)
+are automatically converted into HTML entities. This makes it very
+easy to include example HTML source code using Markdown &ndash; just paste
+it and indent it, and Markdown will handle the hassle of encoding the
+ampersands and angle brackets. For example, this:</p>
+<pre><code>&lt;div class=&quot;footer&quot;&gt;
+    &amp;copy; 2004 Foo Corporation
+&lt;/div&gt;
+</code></pre>
+<p>Regular Markdown syntax is not processed within code blocks. E.g.,
+asterisks are just literal asterisks within a code block. This means
+it&rsquo;s also easy to use Markdown to write about Markdown&rsquo;s own syntax.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">tell application &#34;Foo&#34;
+    beep
+end tell
+</code></pre></div><h2 id="span-elements">Span Elements</h2>
+<h3 id="links">Links</h3>
+<p>Markdown supports two style of links: <em>inline</em> and <em>reference</em>.</p>
+<p>In both styles, the link text is delimited by [square brackets].</p>
+<p>To create an inline link, use a set of regular parentheses immediately
+after the link text&rsquo;s closing square bracket. Inside the parentheses,
+put the URL where you want the link to point, along with an <em>optional</em>
+title for the link, surrounded in quotes. For example:</p>
+<p>This is <a href="http://example.com/">an example</a> inline link.</p>
+<p><a href="http://example.net/">This link</a> has no title attribute.</p>
+<h3 id="emphasis">Emphasis</h3>
+<p>Markdown treats asterisks (<code>*</code>) and underscores (<code>_</code>) as indicators of
+emphasis. Text wrapped with one <code>*</code> or <code>_</code> will be wrapped with an
+HTML <code>&lt;em&gt;</code> tag; double <code>*</code>&rsquo;s or <code>_</code>&rsquo;s will be wrapped with an HTML
+<code>&lt;strong&gt;</code> tag. E.g., this input:</p>
+<p><em>single asterisks</em></p>
+<p><em>single underscores</em></p>
+<p><strong>double asterisks</strong></p>
+<p><strong>double underscores</strong></p>
+<h3 id="code">Code</h3>
+<p>To indicate a span of code, wrap it with backtick quotes (<code>`</code>).
+Unlike a pre-formatted code block, a code span indicates code within a
+normal paragraph. For example:</p>
+<p>Use the <code>printf()</code> function.</p>
+</article>
+
+    <ul class="lowercase pt-2 pb-3 text-sm space-x-2 flex post-tags">
+        <li class="ml-2">
+            <a class="border-b-3 border-yellow-500 hover:bg-red-400" href="#"
+                >neovim</a
+            >
+        </li>
+        <li>
+            <a class="border-b-3 border-yellow-500 hover:bg-red-400" href="#"
+                >linux</a
+            >
+        </li>
+        <li>
+            <a class="border-b-3 border-yellow-500 hover:bg-red-400" href="#"
+                >php</a
+            >
+        </li>
+    </ul>
+</div>
+
+<hr class="border-2 border-yellow-600 border-dashed" />
+
+
+            </section><footer
+    class=" pb-4 px-2 border-b-8 border-l-8 border-r-8 border-yellow-100 font-mono text-sm text-center space-y-1 md:flex md:items-center md:px-3 md:text-left">
+    <div class="flex justify-center items-center"><a class="mr-1 px-1 border-b-3 border-yellow-500 hover:bg-red-500" href="https://github.com/husnaram"
+            title="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+        </a>
+        <span class="font-bold">|</span><a class="mr-1 px-1 border-b-3 border-yellow-500 hover:bg-red-500" href="https://twitter.com/husna_ram/"
+            title="Twitter">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+        </a>
+        <span class="font-bold">|</span><p class="mx-1 px-1">
+            ⚡️ 2021
+            
+            © Husnaram
+            
+        </p>
+        <span class="hidden md:flow-root font-bold">|</span>
+
+    </div>
+    <p class="block mx-1 px-1 md:flow-root">
+        Build with
+        <a href="https://gatsbyjs.com/" class="border-b-3 border-yellow-500 hover:bg-red-500">Hugo</a>
+        +
+        <a href="https://tailwindcss.com/" class="border-b-3 border-yellow-500 hover:bg-red-500">Tailwindcss</a>
+    </p>
+</footer></div>
+    </div>
+    </div>
+
+</body>
+
+</html>
