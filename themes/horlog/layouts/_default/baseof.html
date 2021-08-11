@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ .Language.Lang }}">
+
+{{- partial "head.html" . -}}
+
+<body>
+
+    <div class="text-gray-800 md:w-8/12 md:mx-auto">
+        <div class="md:grid md:grid-cols-12">
+
+            {{- partial "header.html" . -}}
+
+            <section
+                class="pt-5 pb-3 px-2 border-t-8 border-l-8 border-r-8 border-yellow-100 text-sm space-y-6 md:px-3 md:text-base">
+                {{- block "main" . }}{{- end }}
+            </section>
+
+            {{- partial "footer.html" . -}}
+
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>

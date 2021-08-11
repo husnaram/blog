@@ -1,0 +1,64 @@
+{{ define "main" }}
+
+<div class="pl-2 border-l-3 border-yellow-600 space-y-2 md:pl-3 md:space-y-4">
+    <p>{{ .Site.Params.Interjection }}</p>
+    <p>{{ .Site.Params.Introduction }}</p>
+</div>
+
+<!-- List Posts -->
+<div class=" space-y-3">
+    <p>
+        recent blog posts (<a href="/posts" class="border-b-3 border-yellow-400 hover:bg-red-400">see all</a>)
+    </p>
+    <ul class="space-y-2 text-sm font-monos">
+        {{ range (where .Site.RegularPages.ByDate.Reverse "Type" "posts" | first 5) }}
+        <li class="font-mono md:flex md:items-center md:justify-between">
+            <div class="list-recent-posts">
+                <a href="{{ .RelPermalink }}" class=" font-bold border-b-3 border-yellow-400 hover:bg-red-400">
+                    {{ .Title }}
+                </a>
+            </div>
+            <time class="block mt-1 text-xs text-gray-400">{{ dateFormat "Jan 2, 2006" .Date }}</time>
+        </li>
+        {{ end }}
+    </ul>
+</div>
+
+<!-- List projects -->
+<div class="space-y-3">
+    <h2 class="text-lg font-bold tracking-wider title">Projects</h2>
+    <ul class="space-y-2 font-mono text-sm list-projects">
+        {{ range (where .Site.RegularPages.ByDate.Reverse "Type" "projects" | first 4) }}
+        <li>
+            <a href="{{ .RelPermalink }}" class="font-bold border-b-3 border-yellow-400 hover:bg-red-400">
+                {{ .Title }}
+            </a>
+        </li>
+        {{ end }}
+    </ul>
+    <div class="ml-5">
+        <a href="/projects" class="font-bold border-b-3 border-yellow-400 text-sm hover:bg-red-400">and more</a>
+    </div>
+</div>
+
+<!-- List skills -->
+<div class="space-y-3">
+    <h2 class="text-lg font-bold title tracking-wider">Skills</h2>
+    <div class="space-y-3">
+        <p>I thought myself can build something with</p>
+        <ul class="space-y-1 font-mono list-skills">
+            {{- range $val := .Site.Params.Skills -}}
+            <li class="flex items-center text-sm">{{$val}}</li>
+            {{- end -}}
+        </ul>
+        <p>
+            Also my machine use Linux, with
+            <a href="#" class="border-b-3 border-yellow-400 hover:bg-red-400">Archlabs</a>
+            distro.
+        </p>
+    </div>
+</div>
+
+<hr class="border-2 border-yellow-600 border-dashed" />
+
+{{ end }}

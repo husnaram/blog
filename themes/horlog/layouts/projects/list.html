@@ -1,0 +1,29 @@
+{{ define "main" }}
+
+<div class="mb-2">
+    <h2 class="mb-2 text-xl text-mono font-bold tracking-wide title">
+        {{ .Title }}
+    </h2>
+</div>
+
+<!-- List Posts -->
+<div class="space-y-3">
+    <p>{{ .Content }}</p>
+    <ul class="space-y-2 text-sm font-mono">
+        {{- range .Data.Pages -}}
+        {{- if (not (in (.Site.Params.excludedTypes | default (slice "page")) .Type)) -}}
+        <li class="font-mono space-x-2 md:flex md:items-center">
+            <div class="list-posts">
+                <a href="{{ .RelPermalink }}" class=" font-bold border-b-3 border-yellow-400 hover:bg-red-400">
+                    {{ .Title }}
+                </a>
+            </div>
+        </li>
+        {{- end -}}
+        {{- end -}}
+    </ul>
+</div>
+
+<hr class="border-2 border-yellow-600 border-dashed" />
+
+{{ end }}

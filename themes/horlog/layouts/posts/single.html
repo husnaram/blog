@@ -1,0 +1,35 @@
+{{ define "main" }}
+
+<div>
+    <div class="mb-2">
+        <div class="flex mb-4 font-mono text-xs text-gray-400 space-x-1">
+            <span>/</span>
+            <a href="/posts" class="border-b-3 border-yellow-500 pb-0.5 hover:bg-red-400">posts</a>
+        </div>
+        <h2 class="mb-2 text-3xl text-mono font-bold tracking-wide post-title">
+            {{ .Title }}
+        </h2>
+        <time class="text-sm font-mono text-gray-400">
+            Posted on {{ dateFormat "Jan 2, 2006" .Date }}
+        </time>
+    </div>
+
+    <article class="prose max-w-none pt-2 pb-4">{{ .Content }}</article>
+
+    <!-- List tags -->
+    <ul class="lowercase pb-4 text-sm space-x-2 flex post-tags">
+        {{ range .Site.Taxonomies.tags }}
+        <li class="ml-2">
+            <a class="border-b-3 border-yellow-500 hover:bg-red-400"
+                href="{{ .Page.RelPermalink | relLangURL }}{{ . | urlize }}">
+                {{ .Page.Title }}
+            </a>
+        </li>
+        {{ end }}
+    </ul>
+
+</div>
+
+<hr class="border-2 border-yellow-600 border-dashed" />
+
+{{ end }}

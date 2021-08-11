@@ -1,0 +1,16 @@
+{{ define "main" }}
+
+<div class="flex flex-col items-center py-20">
+
+	<div class="text-center">
+		<h2 class="text-9xl">4<span class="text-yellow-500">0</span>4</h2>
+		<h3 class="text-xl">That page can't be found.</h3>
+	</div>
+
+	<div class="prose pt-10">
+		{{ .Content }}
+	</div>
+</div>
+<hr class="border-2 border-yellow-600 border-dashed" />
+
+{{ end }}

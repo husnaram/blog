@@ -1,0 +1,28 @@
+<footer
+    class=" pb-4 px-2 border-b-8 border-l-8 border-r-8 border-yellow-100 font-mono text-sm text-center space-y-1 md:flex md:items-center md:px-3 md:text-left">
+    <div class="flex justify-center items-center">
+
+        {{- range $_, $key := .Site.Params.Social -}}
+        <a class="mr-1 px-1 border-b-3 border-yellow-500 hover:bg-red-500" href="{{ $key.url }}"
+            title="{{ $key.name }}">
+            {{ $key.icon | safeHTML }}
+        </a>
+        <span class="font-bold">|</span>
+        {{- end -}}
+
+        <p class="mx-1 px-1">
+            ⚡️ {{ dateFormat "2006" now }}
+            {{ with .Site.Copyright }}
+            {{ . }}
+            {{ end }}
+        </p>
+        <span class="hidden md:flow-root font-bold">|</span>
+
+    </div>
+    <p class="block mx-1 px-1 md:flow-root">
+        Build with
+        <a href="https://gatsbyjs.com/" class="border-b-3 border-yellow-500 hover:bg-red-500">Hugo</a>
+        +
+        <a href="https://tailwindcss.com/" class="border-b-3 border-yellow-500 hover:bg-red-500">Tailwindcss</a>
+    </p>
+</footer>

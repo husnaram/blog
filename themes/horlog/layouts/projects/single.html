@@ -1,0 +1,41 @@
+{{ define "main" }}
+
+<div>
+    <div class="mb-2">
+        <div class="flex mb-4 font-mono text-xs text-gray-400 space-x-1">
+            <span>/</span>
+            <a
+                href="/projects"
+                class="border-b-3 border-yellow-500 pb-0.5 hover:bg-red-400"
+                >projects</a
+            >
+        </div>
+        <h2 class="mb-2 text-3xl text-mono font-bold tracking-wide post-title">
+            {{ .Title }}
+        </h2>
+    </div>
+
+    <article class="prose max-w-none pt-2 pb-2">{{ .Content }}</article>
+
+    <ul class="lowercase pt-2 pb-3 text-sm space-x-2 flex post-tags">
+        <li class="ml-2">
+            <a class="border-b-3 border-yellow-500 hover:bg-red-400" href="#"
+                >neovim</a
+            >
+        </li>
+        <li>
+            <a class="border-b-3 border-yellow-500 hover:bg-red-400" href="#"
+                >linux</a
+            >
+        </li>
+        <li>
+            <a class="border-b-3 border-yellow-500 hover:bg-red-400" href="#"
+                >php</a
+            >
+        </li>
+    </ul>
+</div>
+
+<hr class="border-2 border-yellow-600 border-dashed" />
+
+{{ end }}
