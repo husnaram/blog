@@ -30,15 +30,15 @@ printf `
 {{- end -}}" />
 
 {{- if isset .Site.Params "favicon" -}}
-<link rel="icon" type="image/png" href="{{ .Site.Params.favicon }}" />
+    <link rel="icon" type="image/png" href="{{ .Site.Params.favicon }}" />
 {{- end -}}
 
 {{ $styles := resources.Get "css/styles.scss" | toCSS | postCSS (dict "config" "./assets/css/postcss.config.js") }}
 {{ if .Site.IsServer }}
-<link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
 {{ else }}
-{{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
-<link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" />
+    {{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
+    <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" />
 {{ end }}
 
 <script defer language="javascript" type="text/javascript" src="{{ " /js/main.js" | urlize | relURL }}"></script>
